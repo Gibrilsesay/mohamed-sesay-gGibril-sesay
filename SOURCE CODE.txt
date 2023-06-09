@@ -1,0 +1,240 @@
+SOURCE CODE FOR THE ABOUT PAGE
+
+{% load static %}
+{% include 'navbar.html' %}
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap\dist\css\bootstrap.css' %}">
+
+<div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/BLUE3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h2>WELCOME</h2>
+          <h3>TO MOHAMED & GIBRIL ONLINE FOOD RESTURANT</h3>
+        </div>
+      </div>
+      <br><br>
+      <h3 style="text-align: center;">WHO WE ARE ?</h3><br><br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 w-50" style="margin-left:100px">
+            <img src="static/G.jpg" class="card-img-top" alt="sushi4">
+            <div class="card-body">
+              <p class="card-title">SHEIK GIBRIL SESAY</p>
+              <p class="card-text">Student at the University of Makeni.The C.E.O of M&G restaurant</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">PROJECT MANAGER</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 w-50" style="margin-left:50px">
+            <img src="static/new-1.jpg" class="card-img-top" alt="sushi4">
+            <div class="card-body">
+              <P class="card-title">MOHAMED F SESAY</P>
+              <p class="card-text">Student at the University of Makeni.The FRONT-END developer for M&G restaurant</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">FRONT-END DEVELOPER</small>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 w-50">
+            <img src="static/M 1.jpg" class="card-img-top" alt="sushi6">
+            <div class="card-body">
+                
+              <P class="card-title">FRANCESS BROWNE</P>
+              <p class="card-text">Student at the University of Makeni.The MANAGER of M&G restaurant</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">MANAGER</small>
+            </div>
+          </div>
+        </div>
+      </div><br>
+      <h3 style="text-align: center;">WHO WE DO ?</h3><br>
+      <p>Is a team of young entrepreneuer minded change makers who are devoted in solving community pressing problems.
+        One of the problems we figure out as a team is  hospitality. 
+        citizens and foreigners within Sierra Leone are finding it Challanging to locate or connect with restaurants and breakfasts. 
+        
+        As a team one of the most unique solution we created for  this problem is by developing a website that will give complete access to foreigners and citizens within country to have access to food and breakfast with total security of users data privacy</p>
+
+SOURCE CODE FOR THE HOME PAGE
+{% include 'navbar.html' %}
+{% load static %}
+
+<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static/pic1.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h2 style="color:rgb(247, 239, 239);">WELCOME</h2>
+        <h3 style="color:rgb(253, 249, 249)">TO MOHAMED & GIBRIL ONLINE FOOD RESTURANT</h3>
+      </div>
+      
+SOURCE CODE FOR THE PLACE ORDER PAGE
+
+{% load static %}
+{% include 'navbar.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+          .E_FOOD {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  h1{
+    text-align: center; color: rgb(255, 0, 55);
+  }
+    </style>
+    <link rel="stylesheet" type="text/css" href="{% static 'E_FOOD.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(0, 247, 255); color: rgb(240, 40, 40); font-size: large;" >
+    <h1>COSTUMER ORDERING DETAILS</h1>
+
+<div>
+<FORM class="E_FOOD" action="" METHOD="POST">
+    {% csrf_token %}
+    {{ form }}
+    <br><input type="submit" value="submit">
+</div>
+</FORM>
+</body>
+</html>
+
+SOURCE CODE FOR THE MENU PAGE
+
+{% load static %}
+{% include 'navbar.html' %}
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap\dist\css\bootstrap.css' %}">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="static/pic1.jpg" class="d-block w-100" alt="food">
+          </div>
+          
+      </div><br><br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 w-50" style="margin-left:100px">
+            <img src="static/food4.jpg" class="card-img-top" alt="sushi4">
+            <div class="card-body">
+              <h5 class="card-title">RICE & CHICKEN</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <h3 class="text-body-secondary">ORDER NOW</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 w-50" style="margin-left:100px">
+            <img src="static/sushi4.jpg" class="card-img-top" alt="sushi4">
+            <div class="card-body">
+              <h5 class="card-title">CASSAVA LEAF OIL</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <h3 class="text-body-secondary">ORDER NOW</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 w-50" style="margin-left:100px">
+            <img src="static/food3.jpg" class="card-img-top" alt="sushi6">
+            <div class="card-body">
+                
+              <h5 class="card-title">GROUNDNUT SOUP</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <h3 class="text-body-secondary">ORDER NOW</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100 w-50" style="margin-left:100px">
+            <img src="static/sushi4.jpg" class="card-img-top" alt="sushi4">
+            <div class="card-body">
+              <h5 class="card-title">DRY RICE WITH GAGATO</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <h3 class="text-body-secondary">ORDER NOW</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 w-50" style="margin-left:100px">
+            <img src="static/sushi4.jpg" class="card-img-top" alt="sushi4">
+            <div class="card-body">
+              <h5 class="card-title">EBBA & BANGA SOUP</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <h3 class="text-body-secondary">ORDER NOW</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 w-50" style="margin-left:100px">
+            <img src="static/OIP (2).jpg" class="card-img-top" alt="sushi6">
+            <div class="card-body">
+                
+              <h5 class="card-title">FOOFOO & OKRA SOUP</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <h3 class="text-body-secondary">ORDER NOW</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+SOURCE CODE FOR THE NAV BAR PAGE
+
+{% load static %}
+<nav class="navbar bg-dark" data-bs-theme="dark">
+    <!-- Navbar content -->
+  
+<link rel="stylesheet" type="text/css" href="{% static 'bootstrap\dist\css\bootstrap.css' %}">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">ONLINE FOOD SYSTEM</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'place_order' %}">place_order</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'menu' %}">menu</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav></nav>
